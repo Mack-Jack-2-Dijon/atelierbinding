@@ -1,11 +1,17 @@
-<img src="./assets/image.jpg" height="200">
+<p>1. La photo de l'utilisateur</p>
+<img [src]="user.photo" />
 <h1>Hello world</h1>
-<p>Age</p>
-<input type="number" [(ngModel)]="age"/>
+<p>2. Age</p>
+<p *ngIf="this.result1">{{ user.age }}</p>
+<button (click)="sub()">montrer</button>
+
+<p><input type="number" id="element" [(ngModel)]="age" /></p>
 
 <button (click)="add()">dans un an tu auras</button>
-{{result}}
-<p>Citation</p>
-<input type="text" [(ngModel)]="citation"/>
+{{ result }}
+<p>2. Citation</p>
+<input type="text" [(ngModel)]="citation" />
 
-{{citation}}
+{{ citation }}
+
+
